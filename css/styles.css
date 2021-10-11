@@ -567,6 +567,7 @@ a {
 
 .projects-wrapper {
   position: relative;
+  overflow: hidden;
 }
 .project-overlay {
   position: absolute;
@@ -581,14 +582,12 @@ a {
   font-size: 18px;
   line-height: 1.56;
   padding: 63px 24px;
-  opacity: 0;
-}
-.projects-wrapper:hover .project-overlay {
-  opacity: 1;
-  transform: translateY(-100%);
-  transition-property: transform, opacity;
+  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.projects-wrapper:hover .project-overlay {
+  transform: translateY(-100%);
 }
 /* ICONS */
 .icon-envelope {
